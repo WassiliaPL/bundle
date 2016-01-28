@@ -6,5 +6,5 @@ void factorial (char *x) //silnia
 		y = y * s;
 		s--;
 	}
-	cout << atoi(x) << "! = " << y << endl;
+	cout << x << "! = " << y << endl;
 }

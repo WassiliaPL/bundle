@@ -7,6 +7,8 @@ using namespace std;
 #include "src/factorial.hpp"
 #include "src/prime_numbers.hpp"
 #include "src/help.hpp"
+#include "src/schedule.hpp"
+#include "src/exponentiation.hpp"
 
 int main (int argc, char *argv[])
 {
@@ -19,5 +21,7 @@ int main (int argc, char *argv[])
 		else if ((arg == "-p") or (arg == "--prime")) prime_numbers (argv[2]);
 		else if ((arg == "-f") or (arg == "--factorial")) factorial (argv[2]);
 		else if ((arg == "-d") or (arg == "--decimal2all")) dec2all (argv[2], argv[3]);
+		else if ((arg == "-s") or (arg == "--schedule")) schedule (argv[2]);
+		else if ((arg == "-e") or (arg == "--exponentiation")) exponentiation (argv[2], argv[3]);
 	}
 }
