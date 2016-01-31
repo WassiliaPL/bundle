@@ -10,6 +10,7 @@ using namespace std;
 #include "src/schedule.hpp"
 #include "src/exponentiation.hpp"
 #include "src/caesar_cipher.hpp"
+#include "src/morse.hpp"
 
 int main (int argc, char *argv[])
 {
@@ -31,6 +32,16 @@ int main (int argc, char *argv[])
 		else if ((arg == "-ce") or (arg == "--caesarencode"))
 		{
 			for (int i = 2; i<argc; i++) caesar_encode (argv[i]);
+			cout << endl;
+		}
+		else if ((arg == "-me") or (arg == "--morseencode"))
+		{
+			for (int i = 2; i<argc; i++) morse_encode (argv[i]);
+			cout << endl;
+		}
+		else if ((arg == "-md") or (arg == "--morsedecode"))
+		{
+			for (int i = 2; i<argc; i++) morse_decode (argv[i]);
 			cout << endl;
 		}
 	}
