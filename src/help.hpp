@@ -20,7 +20,7 @@ void help () //pomoc
 	     << "\t-s, --schedule\t\t[INTEGER NUMBER]\n"
 	     << "\t-e, --exponentiation\t[BASE NUMBER] [EXPONENT VALUE]\n"
 	     << "\t-cd, --caesardecode\t[WORD] [WORD] ...\n"
-	     << "\t-ce, --caesarencode\t[CODE] [CODE] ...\n";
+	     << "\t-ce, --caesarencode\t[CODE] [CODE] ...\n"
 	     << "\t-md, --morsedecode\t[CODE]\n"
-	     << "\t-me, --morseencode\t[WORD] [WORD] ...\n"
+	     << "\t-me, --morseencode\t[WORD] [WORD] ...\n";
 }
