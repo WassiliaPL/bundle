@@ -13,7 +13,6 @@ void help () //pomoc
 	     << "\t-p, --prime\t\t<one argument>\n"
 	     << "\t-f, --factorial\t\t<one argument>\n"
 	     << "\t-d, --decimal2all\t<first argument is decimal value> <second argument is target system base>\n"
-	     << "\t-f, --factorial\t\t<one argument>\n"
 	     << "\t-e, --exponentiation\t<first argument is base value> <second argument is exponent value>\n"
 	     << "\t-cd, --caesardecode\t<first word> <second word> ...\n"
 	     << "\t-ce, --caesarencode\t<first word> <second word> ...\n";
