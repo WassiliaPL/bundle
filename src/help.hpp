@@ -13,6 +13,7 @@ void help () //pomoc
 	     << "\t-ce, --caesarencode\tEncodes given string to Caesar Cipher\n"
 	     << "\t-md, --morsedecode\tDecodes given string from Morse\n"
 	     << "\t-me, --morseencode\tEncodes given string to Morse\n"
+	     << "\t-b, --bubblesort\tSorts given numbers\n"
 	     << "\nUsage:\n"
 	     << "\t-p, --primenumbers\t[INTEGER NUMBER]\n"
 	     << "\t-f, --factorial\t\t[INTEGER NUMBER]\n"
@@ -22,5 +23,6 @@ void help () //pomoc
 	     << "\t-cd, --caesardecode\t[WORD] [WORD] ...\n"
 	     << "\t-ce, --caesarencode\t[CODE] [CODE] ...\n"
 	     << "\t-md, --morsedecode\t[CODE]\n"
-	     << "\t-me, --morseencode\t[WORD] [WORD] ...\n";
+	     << "\t-me, --morseencode\t[WORD] [WORD] ...\n"
+	     << "\t-b, --bubblesort\t[INTEGER NUMBER] [INTEGER NUMBER] ...\n";
 }

@@ -11,6 +11,7 @@ using namespace std;
 #include "src/exponentiation.hpp"
 #include "src/caesar_cipher.hpp"
 #include "src/morse.hpp"
+#include "src/sort.hpp"
 
 int main (int argc, char *argv[])
 {
@@ -42,6 +43,13 @@ int main (int argc, char *argv[])
 		else if ((arg == "-md") or (arg == "--morsedecode"))
 		{
 			for (int i = 2; i<argc; i++) morse_decode (argv[i]);
+			cout << endl;
+		}
+		else if ((arg == "-b") or (arg == "--bubblesort"))
+		{
+			int t[argc];
+			for (int i = 2; i<argc; i++) t[i - 2] = atoi(argv[i]);
+			sort (t, argc-2);
 			cout << endl;
 		}
 	}
