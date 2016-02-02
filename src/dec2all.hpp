@@ -10,7 +10,7 @@ void dec2all (char *x, char *y) //dziesietny na inny
 	}
 	while (temp > 0);
 	j = i;
-	cout << d << " in the system with base " << k << " is: ";
+	cout << d << "(10)" << " = ";
 	for (i=j-1; i>=0; i--)
 	{
 		if (output[i] == 10) cout << "A";
@@ -22,5 +22,5 @@ void dec2all (char *x, char *y) //dziesietny na inny
 		else
 		cout << output[i];
 	}
-	cout << endl;
+	cout << "(" << k << ")" << endl;
 }

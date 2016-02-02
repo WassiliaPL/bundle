@@ -1,12 +1,15 @@
-void exponentiation (char *x, char *y) //potegowanie
+void exponentiation (char *x, char *y)
 {
-	int e = atoi(x), r, w = atoi(y);
-	r = e;
-	do
+	int i = atoi(y), r = 1;
+	if (atoi(y) == 0) cout << atoi(x) << " ^ " << atoi(y) << " = 1" << endl;
+	else if (atoi(y) == 1) cout << atoi(x) << " ^ " << atoi(y) << " = " << atoi(x) << endl;
+	else
 	{
-		r = r * e;
-		w--;
+		while (i != 0)
+		{
+			r = r * atoi(x);
+			i--;
+		}
+		cout << atoi(x) << " ^ " << atoi(y) << " = " << r << endl;
 	}
-	while (w > 1);
-	cout << e << " ^ " << y << " = " << r << endl;
 }

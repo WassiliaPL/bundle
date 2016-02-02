@@ -1,9 +1,12 @@
 #include <iostream>
 #include <cstdlib>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
 #include "src/dec2all.hpp"
+#include "src/all2dec.hpp"
 #include "src/factorial.hpp"
 #include "src/prime_numbers.hpp"
 #include "src/help.hpp"
@@ -23,6 +26,7 @@ int main (int argc, char *argv[])
 		else if ((arg == "-p") or (arg == "--primenumbers")) prime_numbers (argv[2]);
 		else if ((arg == "-f") or (arg == "--factorial")) factorial (argv[2]);
 		else if ((arg == "-d") or (arg == "--decimal2all")) dec2all (argv[2], argv[3]);
+		else if ((arg == "-a") or (arg == "--all2decimal")) all2dec (argv[2], argv[3]);
 		else if ((arg == "-s") or (arg == "--schedule")) schedule (argv[2]);
 		else if ((arg == "-e") or (arg == "--exponentiation")) exponentiation (argv[2], argv[3]);
 		else if ((arg == "-cd") or (arg == "--caesardecode"))
