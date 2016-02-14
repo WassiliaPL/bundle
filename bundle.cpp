@@ -15,6 +15,8 @@ using namespace std;
 #include "src/caesar_cipher.hpp"
 #include "src/morse.hpp"
 #include "src/sort.hpp"
+#include "src/min_max.hpp"
+#include "src/fibonacci.hpp"
 
 int main (int argc, char *argv[])
 {
@@ -56,5 +58,13 @@ int main (int argc, char *argv[])
 			sort (t, argc-2);
 			cout << endl;
 		}
+		else if ((arg == "-m") or (arg == "--minmax"))
+		{
+			int t[argc];
+			for (int i = 2; i<argc; i++) t[i - 2] = atoi(argv[i]);
+			min_max (t, argc-2);
+			cout << endl;
+		}
+		else if ((arg == "-n") or (arg == "--fibonacci")) fibonacci (argv[2]);
 	}
 }

@@ -15,6 +15,8 @@ void help () //pomoc
 	     << "\t-md, --morsedecode\tDecodes given string from Morse\n"
 	     << "\t-me, --morseencode\tEncodes given string to Morse\n"
 	     << "\t-b, --bubblesort\tSorts given numbers\n"
+	     << "\t-m, --minmax\t\tFinds maximum and minimum in given numbers\n"
+	     << "\t-n, --fibonacci\t\tReturns fibonacci sequence\n"
 	     << "\nUsage:\n"
 	     << "\t-p, --primenumbers\t[INTEGER NUMBER]\n"
 	     << "\t-f, --factorial\t\t[INTEGER NUMBER]\n"
@@ -26,5 +28,7 @@ void help () //pomoc
 	     << "\t-ce, --caesarencode\t[CODE] [CODE] ...\n"
 	     << "\t-md, --morsedecode\t[CODE]\n"
 	     << "\t-me, --morseencode\t[WORD] [WORD] ...\n"
-	     << "\t-b, --bubblesort\t[INTEGER NUMBER] [INTEGER NUMBER] ...\n";
+	     << "\t-b, --bubblesort\t[INTEGER NUMBER] [INTEGER NUMBER] ...\n"
+	     << "\t-m, --minmax\t\t[INTEGER NUMBER] [INTEGER NUMBER] ...\n"
+	     << "\t-n, --fibonacci\t\t[INTEGER NUMBER]\n";
 }
