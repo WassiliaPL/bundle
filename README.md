@@ -1,24 +1,20 @@
 # Bundle program
----
 ### Installing from source 
----
 ```sh
-$ git clone https://github.com/dawidd6/bundle.git
-$ cd bundle
-$ make
-# make install
+git clone https://github.com/dawidd6/bundle.git
+cd bundle
+make
+sudo make install
 ```
 ### Usage
----
 To print help message, type
 ```sh
-$ bundle
+bundle
 #or
-$ bundle -h
+bundle -h
 #or
-$ bundle --help
+bundle --help
 ```
 ### License
----
 ##### BSD
 
