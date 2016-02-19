@@ -31,6 +31,7 @@ void morse_encode (char *x)
 		if ((t[i] == 'z') or (t[i] == 'Z')) cout << "--../";
 		if (t[i] == ' ') cout << "/";
         }
+        cout << "/";
 }
 
 void morse_decode (char *x)
