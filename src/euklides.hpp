@@ -6,5 +6,5 @@ void euklides (char *x, char *y)
 		if(a > b) a = a - b;
 		else b = b - a;
 	}
-	cout << a;
+	cout << a << endl;
 }
