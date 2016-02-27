@@ -31,7 +31,7 @@ void help () //pomoc
 	     << "\t-b, --bubblesort\t[INTEGER NUMBER] [INTEGER NUMBER] ...\n"
 	     << "\t-m, --minmax\t\t[INTEGER NUMBER] [INTEGER NUMBER] ...\n"
 	     << "\t-n, --fibonacci\t\t[INTEGER NUMBER]\n"
-	     << "\t-eu, --euklides\t\t[INTEGER NUMBER]\t\t[INTEGER NUMBER]\n"
+	     << "\t-eu, --euklides\t\t[INTEGER NUMBER] [INTEGER NUMBER]\n"
 	     << "\nManufactured by \e[1mdawidd6\e[0m and \e[1mWassiliaPL\e[0m\n"
 	     << "Version: \e[1m1.3\e[0m\n";
 }
