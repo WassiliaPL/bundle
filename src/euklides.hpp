@@ -1,6 +1,6 @@
 void euklides (char *x, char *y)
 {
-	int a = x, b = atoi(y);
+	int a = atoi(x), b = atoi(y);
 	while (a != b)
 	{
 		if(a > b) a = a - b;
