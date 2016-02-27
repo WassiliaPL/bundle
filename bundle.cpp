@@ -67,6 +67,6 @@ int main (int argc, char *argv[])
 			cout << endl;
 		}
 		else if ((arg == "-n") or (arg == "--fibonacci")) fibonacci (argv[2]);
-else if ((arg == "-eu") or (arg == "--euklides")) euklides (argv[2], argv[3]);
+		else if ((arg == "-eu") or (arg == "--euklides")) euklides (argv[2], argv[3]);
 	}
 }
