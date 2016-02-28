@@ -32,6 +32,9 @@ void help () //pomoc
 	     << "<INTEGER NUMBER>\n"
 	     << "\t-eu, --euklides\t\tReturns the greatest common divisor of two numbers "
 	     << "<INTEGER NUMBER> <INTEGER NUMBER>\n"
-	     << "\nManufactured by \e[1mdawidd6\e[0m and \e[1mWassiliaPL\e[0m\n"
-	     << "Version: \e[1m1.3\e[0m\n";
+	     << "\t-r, --readfile\t\tPrint file's content "
+	     << "<PATH TO EXISTING FILE>\n"
+	     << "\t-w, --writetofile\tAppends given string in new line to specified file "
+	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
+	     << "\nManufactured by \e[1mdawidd6\e[0m and \e[1mWassiliaPL\e[0m\n";
 }
