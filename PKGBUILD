@@ -9,19 +9,19 @@ provides=()
 conflicts=()
 depends=()
 optdepends=()
-makedepends=('git')
-source=("$pkgname"::'git+https://github.com/dawidd6/bundle.git#branch=master')
+makedepends=()
+source=("http://github.com/dawidd6/bundle/archive/$pkgver.tar.gz")
 md5sums=('SKIP')
 
 build()
 {
-	cd "$srcdir/$pkgname"
+	cd "$srcdir/$pkgname-$pkgver"
 	make
 }
 
 package()
 {
-	cd "$srcdir/$pkgname"
-	mkdir -p $pkgdir/usr/local/bin
-	make DESTDIR="$pkgdir/usr/local/bin" install
+	cd "$srcdir/$pkgname-$pkgver"
+	mkdir -p $pkgdir/usr/bin
+	make DESTDIR="$pkgdir/usr/bin" install
 }
