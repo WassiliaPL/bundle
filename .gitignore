@@ -4,7 +4,6 @@
 # Unignore all with extensions
 !*.*
 !Makefile
-!PKGBUILD
 
 # Unignore all dirs
 !*/
