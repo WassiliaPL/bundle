@@ -9,7 +9,7 @@ $(TARGET): $(SRC)
 	
 .PHONY:
 install:
-	mv $(TARGET) $(DESTDIR)
+	install $(TARGET) $(DESTDIR)
 
 .PHONY:
 uninstall:
