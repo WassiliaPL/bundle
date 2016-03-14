@@ -1,9 +1,9 @@
 language: cpp
 
 before_install:
-	- sudo apt-get update -qq
-	- sudo apt-get install -qq clang gcc
+- sudo apt-get update -qq
+- sudo apt-get install -qq clang gcc
 
 script:
-	- make CXX=clang++
-	- make CXX=g++
+- make CXX=clang++
+- make CXX=g++
