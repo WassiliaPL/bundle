@@ -6,12 +6,14 @@ before_install:
 
 script:
 - make CXX=clang++
+- rm bundle
 - make CXX=g++
+- rm bundle
 
 notifications:
-email:
-recipients:
-- dawidd0811@gmail.com
-- wojcikmikolaj1@gmail.com
-on_success: always
-on_failure: always
+ email:
+  recipients:
+  - dawidd0811@gmail.com
+  - wojcikmikolaj1@gmail.com
+  on_success: always
+  on_failure: always
