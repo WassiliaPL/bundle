@@ -1,3 +1,4 @@
+#CXX=clang++
 CXX=g++
 CXXFLAGS=-o
 TARGET=bundle
