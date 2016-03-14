@@ -1,3 +1,4 @@
+#Assembled by dawidd6
 BASH=$(shell if hash g++ &> /dev/null; then echo "g++"; elif hash clang++ &> /dev/null; then echo "clang++"; fi)
 CXX=$(BASH)
 CXXFLAGS=-o
