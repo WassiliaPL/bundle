@@ -7,3 +7,11 @@ before_install:
 script:
 - make CXX=clang++
 - make CXX=g++
+
+notifications:
+email:
+recipients:
+- dawidd0811@gmail.com
+- wojcikmikolaj1@gmail.com
+on_success: always
+on_failure: always
