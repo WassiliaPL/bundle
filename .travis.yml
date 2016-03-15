@@ -1,14 +1,15 @@
 language: cpp
 
+compiler:
+- clang
+- gcc
+
 before_install:
 - sudo apt-get update
 - sudo apt-get install clang gcc
 
 script:
-- make CXX=clang++
-- rm bundle
-- make CXX=g++
-- rm bundle
+- make
 
 notifications:
  email:
