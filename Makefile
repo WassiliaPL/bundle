@@ -14,3 +14,7 @@ install:
 uninstall:
 	rm $(DESTDIR)$(TARGET)
 
+.PHONY:
+clean:
+	rm $(TARGET)
+
