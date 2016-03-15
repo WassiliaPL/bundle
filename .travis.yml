@@ -1,8 +1,10 @@
 language: cpp
 
-compiler:
-- clang
-- gcc
+addons:
+ apt:
+  packages:
+  - clang
+  - gcc
 
 script:
 - make CXX=clang++
