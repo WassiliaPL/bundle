@@ -11,9 +11,13 @@ sudo make install
 To print help message, type
 ```sh
 bundle
-#or
+```
+or
+```sh
 bundle -h
-#or
+```
+or
+```sh
 bundle --help
 ```
 ### License
