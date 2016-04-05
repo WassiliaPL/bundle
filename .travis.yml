@@ -5,6 +5,8 @@ addons:
   packages:
   - clang
   - gcc
+ code_climate:
+  repo_token: aa4d6e58af5171733b3ba4c49e65fdd806b6af90645110abe0799462bcae908b
 
 script:
 - make CXX=clang++
