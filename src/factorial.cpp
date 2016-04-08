@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void factorial (char *x) //silnia
 {
 	int s = atoi(x), y = 1;

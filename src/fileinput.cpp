@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void fileinput (char *x, char *y)
 {
 	fstream file;

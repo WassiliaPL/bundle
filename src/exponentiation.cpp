@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void exponentiation (char *x, char *y)
 {
 	int i = atoi(y), r = 1;

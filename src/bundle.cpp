@@ -1,26 +1,4 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <sstream>
-#include <fstream>
-
-using namespace std;
-
-#include "src/dec2all.hpp"
-#include "src/all2dec.hpp"
-#include "src/factorial.hpp"
-#include "src/prime_numbers.hpp"
-#include "src/help.hpp"
-#include "src/schedule.hpp"
-#include "src/exponentiation.hpp"
-#include "src/caesar_cipher.hpp"
-#include "src/morse.hpp"
-#include "src/sort.hpp"
-#include "src/min_max.hpp"
-#include "src/fibonacci.hpp"
-#include "src/euklides.hpp"
-#include "src/fileoutput.hpp"
-#include "src/fileinput.hpp"
+#include "bundle.hpp"
 
 int main (int argc, char *argv[])
 {
@@ -73,5 +51,6 @@ int main (int argc, char *argv[])
 		else if ((arg == "-eu") or (arg == "--euklides")) euklides (argv[2], argv[3]);
 		else if ((arg == "-r") or (arg == "--readfile")) fileoutput (argv[2]);
 		else if ((arg == "-w") or (arg == "--writetofile")) fileinput (argv[2], argv[3]);
+		else if ((arg == "-ff") or (arg == "--findinfile")) filefind (argv[2], argv[3]);
 	}
 }

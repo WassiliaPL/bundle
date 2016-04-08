@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void euklides (char *x, char *y)
 {
 	int a = atoi(x), b = atoi(y);

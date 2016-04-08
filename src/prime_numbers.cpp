@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void prime_numbers (char *x) //liczby_pierwsze
 {
 	int N = atoi(x), temp, j, i;

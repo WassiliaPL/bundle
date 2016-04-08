@@ -1,4 +1,6 @@
-void help () //pomoc
+#include "bundle.hpp"
+
+void help ()
 {
 	cout << "Usage:\n"
 	     << "\tbundle [OPTION] <ARGUMENT> <ARGUMENT> ...\n"
@@ -35,6 +37,8 @@ void help () //pomoc
 	     << "\t-r, --readfile\t\tPrint file's content "
 	     << "<PATH TO EXISTING FILE>\n"
 	     << "\t-w, --writetofile\tAppends given string in new line to specified file "
+	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
+	     << "\t-ff, --findinfile\tFind given string in file "
 	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
 	     << "\nManufactured by \e[1mdawidd6\e[0m and \e[1mWassiliaPL\e[0m\n";
 }

@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 unsigned long long hex2dec(string x)
 {
     unsigned long long n;
@@ -31,7 +33,7 @@ void all2dec (char *x, char *y) //inny na dziesietny
 	else
 	{
 		int j = h.length() - 1, r = 0;
-		for (int i = 0; i < h.length(); i++)
+		for (unsigned int i = 0; i < h.length(); i++)
 		{
 			char p = h[i];
 			int z = p - '0';

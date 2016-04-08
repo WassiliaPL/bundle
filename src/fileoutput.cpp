@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void fileoutput (char *x)
 {
 	fstream file;

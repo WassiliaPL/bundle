@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void dec2all (char *x, char *y) //dziesietny na inny
 {
 	int d = atoi(x), k = atoi(y), output[100];

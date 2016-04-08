@@ -1,7 +1,9 @@
+#include "bundle.hpp"
+
 void caesar_encode (char *x)
 {
     string t = x;
-    for (int i=0; i<t.length(); i++)
+    for (unsigned int i = 0; i < t.length(); i++)
     {
     	switch (t[i])
     	{
@@ -119,7 +121,7 @@ void caesar_encode (char *x)
 void caesar_decode (char *x)
 {
     string t = x;
-    for (int i=0; i<t.length(); i++)
+    for (unsigned int i = 0; i < t.length(); i++)
     {
     	switch (t[i])
     	{

@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void min_max (int x[], int y)
 {
 	for (int i = 0; i < y; i++)

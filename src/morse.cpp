@@ -1,7 +1,9 @@
+#include "bundle.hpp"
+
 void morse_encode (char *x)
 {
 	string t = x;
-	for (int i = 0; i < t.length (); i++)
+	for (unsigned int i = 0; i < t.length (); i++)
         {
 		if ((t[i] == 'a') or (t[i] == 'A')) cout << ".-/";
 		if ((t[i] == 'b') or (t[i] == 'B')) cout << "-.../";
@@ -37,7 +39,7 @@ void morse_encode (char *x)
 void morse_decode (char *x)
 {
 	string t = x;
-	for (int i = 0; i < t.length (); i++)
+	for (unsigned int i = 0; i < t.length (); i++)
         {
 		if ((t[i] == '.') and (t[i + 1] == '-') and (t[i + 2] == '/'))
 		{

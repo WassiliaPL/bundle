@@ -1,3 +1,5 @@
+#include "bundle.hpp"
+
 void fibonacci (char *x)
 {
 	unsigned int n = atoi(x);
@@ -10,7 +12,7 @@ void fibonacci (char *x)
 	else
 	{
 		cout << "F(0) = " << F[0] << endl << "F(1) = " << F[1] << endl;
-		for (int i = 2; i <= n; i++)
+		for (unsigned int i = 2; i <= n; i++)
 		{
 			F[i] = F[i - 1] + F[i - 2];
 			cout << "F" << "(" << i << ") = " << F[i] << endl;
