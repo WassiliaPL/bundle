@@ -25,7 +25,7 @@ int expo (int x, int y)
 	}
 }
 
-void all2dec (char *x, char *y) //inny na dziesietny
+void all2dec (char *x, char *y)
 {
 	string h = x;
 	int k = atoi(y);
