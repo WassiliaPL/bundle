@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 #include <fstream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -29,5 +29,5 @@ void prime_numbers (char *x);
 void schedule (char *x);
 void sort (int x[], int y);
 void filefind (char *x, char *y);
-void armstrong(string x);
+void armstrong(char *x);
 #endif

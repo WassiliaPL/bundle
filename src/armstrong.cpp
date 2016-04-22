@@ -1,6 +1,6 @@
 #include "bundle.hpp"
 
-void armstrong(string x)
+void armstrong(char *x)
 {
 	int n, sum2, T[100];
 	signed int i, sum ;
