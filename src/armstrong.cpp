@@ -2,7 +2,7 @@
 
 void armstrong(char *x)
 {
-	int n, sum2, T[100];
+	int n, T[100];
 	signed int i, sum ;
 	string number = x;
     	i=0;
