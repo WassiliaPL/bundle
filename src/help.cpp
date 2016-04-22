@@ -40,5 +40,6 @@ void help ()
 	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
 	     << "\t-ff, --findinfile\tFind given string in file "
 	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
+	     << "\t-ar, --armstrong\tCheck if a number is Armstrong number "
 	     << "\nManufactured by \e[1mdawidd6\e[0m and \e[1mWassiliaPL\e[0m\n";
 }
