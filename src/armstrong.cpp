@@ -5,7 +5,6 @@ void armstrong(string x)
 	int n, sum2, T[100];
 	signed int i, sum ;
 	string number = x;
-    	n=number.length();
     	i=0;
     	for(n=number.length();n>0;n--)
     	{
