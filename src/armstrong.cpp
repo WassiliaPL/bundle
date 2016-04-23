@@ -15,7 +15,8 @@ void armstrong(char *x)
     	for(i=0;i<n;i++)
     	{
         	sum=sum+pow(T[i],n);
+        	if(n==1) cout << number << " is not Armstrong number" << endl;
+        	else if(sum==atoi(number.c_str())) cout << number << " is Armstrong number" << endl;
     	}
-    	if(sum==atoi(number.c_str())) cout << number << " is Armstrong number" << endl;
-    	else cout << number << " is not Armstrong number" << endl;
+    	if(sum!=atoi(number.c_str())) cout << number << " is not Armstrong number" << endl;
 }
