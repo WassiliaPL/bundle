@@ -29,5 +29,6 @@ void prime_numbers (char *x);
 void schedule (char *x);
 void sort (int x[], int y);
 void filefind (char *x, char *y);
-void armstrong(char *x);
+void armstrong (char *x);
+void palindrome (char *x);
 #endif

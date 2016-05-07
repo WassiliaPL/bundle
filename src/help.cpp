@@ -42,5 +42,7 @@ void help ()
 	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
 	     << "\t-ar, --armstrong\tCheck if a number is Armstrong number "
 	     << "<INTEGER NUMBER>\n"
+	     << "\t-pd, --palindrome\tCheck if a word is a palindrome "
+	     << "<WORD>\n"
 	     << "\nManufactured by \e[1mdawidd6\e[0m and \e[1mWassiliaPL\e[0m\n";
 }

@@ -53,6 +53,7 @@ int main (int argc, char *argv[])
 		else if ((arg == "-w") or (arg == "--writetofile")) fileinput (argv[2], argv[3]);
 		else if ((arg == "-ff") or (arg == "--findinfile")) filefind (argv[2], argv[3]);
 		else if ((arg == "-ar") or (arg == "--armstrong")) armstrong (argv[2]);
+		else if ((arg == "-pd") or (arg == "--palindrome")) palindrome (argv[2]);
 		else
 		{
 			cout << "bundle: wrong argument\n" << "Write „bundle --help” for informations\n";
