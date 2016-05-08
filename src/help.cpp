@@ -36,7 +36,7 @@ void help ()
 	     << "<INTEGER NUMBER> <INTEGER NUMBER>\n"
 	     << "\t-r, --readfile\t\tPrint file's content "
 	     << "<PATH TO EXISTING FILE>\n"
-	     << "\t-w, --writetofile\tAppends given string in new line to specified file "
+	     << "\t-w, --writetofile\tAppends given string in new line to specified file (you can add '\\n' at the beginning or ending of string to create newline "
 	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"
 	     << "\t-ff, --findinfile\tFind given string in file "
 	     << "<STRING IN DOUBLE QUOTES> <PATH TO EXISTING FILE>\n"

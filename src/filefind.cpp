@@ -4,7 +4,7 @@ void filefind (char *x, char *y)
 {
 	string txt = x, out;
 	fstream file;
-	unsigned int k = txt.length(), line = 0;
+	unsigned int k = txt.length(), line = 0, j, i, counter;
 	file.open (y, fstream::in);
 	if (file.is_open())
 	{
@@ -12,11 +12,15 @@ void filefind (char *x, char *y)
 		{
 			getline (file, out);
 			line++;
-			for (unsigned int i = 0; i < out.length(); i++)
+			j = 0;
+			counter = 0;
+			for (i = 0; i < out.length(); i++)
 			{
-				if ((out[i] == txt[0]) and (out[i+k-1] == txt[k-1]))
-				cout << "Found on line: " << line << " >> " << out << endl;
+				if (out[i] == txt[j]) j++;
+				else j = 0;
+				if (j == k) counter++;
 			}
+			if (counter > 0) cout << counter << " matches on line #" << line << " >> " << out << endl;
 		}
 	}
 	else cout << "file doesn't exist" << endl;
