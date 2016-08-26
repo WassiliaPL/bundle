@@ -1,12 +1,19 @@
 #Assembled by dawidd6
 CXX=g++
-CXXFLAGS=-Wall -o
 TARGET=bundle
-SRC=src/*.cpp
 DESTDIR=/usr/bin/
+SRC=$(wildcard src/*.cpp)
+OBJ=$(SRC:.cpp=.o)
+START_COLOR=\033[0;33m
+CLOSE_COLOR=\033[m
 
-build:
-	$(CXX) $(SRC) $(CXXFLAGS) $(TARGET)
+src/%.o: src/%.cpp
+	@echo "$(START_COLOR)[CXX]$(CLOSE_COLOR) $<"
+	@$(CXX) -c -o $@ $<
+
+$(TARGET): $(OBJ)
+	@echo "$(START_COLOR)[CXX]$(CLOSE_COLOR) $@"
+	@$(CXX) -o $@ $^
 
 install:
 	install $(TARGET) $(DESTDIR)
@@ -15,7 +22,7 @@ uninstall:
 	rm $(DESTDIR)$(TARGET)
 
 clean:
-	rm $(TARGET)
-	
-.PHONY: install uninstall clean
+	@echo "$(START_COLOR)[RM]$(CLOSE_COLOR) $(TARGET) src/*.o"
+	@rm -rf $(TARGET) src/*.o
 
+.PHONY: install uninstall clean
