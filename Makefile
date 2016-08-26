@@ -12,10 +12,10 @@ install:
 	install $(TARGET) $(DESTDIR)
 
 uninstall:
-	rm -f $(DESTDIR)$(TARGET)
+	rm $(DESTDIR)$(TARGET)
 
 clean:
-	rm -f $(TARGET)
+	rm $(TARGET)
 	
 .PHONY: install uninstall clean
 
