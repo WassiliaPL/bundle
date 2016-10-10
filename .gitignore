@@ -1,9 +1,9 @@
 # Ignore
-bin/
-*.o
+*
 
 # Unignore
 !*.cpp
-!.h
+!*.hpp
 !Makefile
 !*.md
+!.*
