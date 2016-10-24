@@ -2,6 +2,8 @@
 *
 
 # Unignore
-!*.*
+!*.cpp
+!*.hpp
 !Makefile
-!*/
+!*.md
+!.*
