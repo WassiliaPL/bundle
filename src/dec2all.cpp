@@ -4,7 +4,7 @@ void dec2all (char *x, char *y)
 {
 	int d = atoi(x), k = atoi(y), output[100];
 	int temp = d, j, i = 0;
-	if(k>=2)
+	if(k>1)
 	{
 		do
 		{
