@@ -1,4 +1,6 @@
-void schedule (char *x) //rozklad na czynniki pierwsze
+#include "bundle.hpp"
+
+void schedule (char *x)
 {
 	int y = atoi(x), i = 2;
 	while(y != 1)

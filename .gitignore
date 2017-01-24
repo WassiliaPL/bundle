@@ -1,0 +1,9 @@
+# Ignore
+*
+
+# Unignore
+!*.cpp
+!*.hpp
+!Makefile
+!*.md
+!.*

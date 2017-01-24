@@ -1,0 +1,20 @@
+language: cpp
+
+addons:
+ apt:
+  packages:
+  - clang
+  - gcc
+
+script:
+- make CXX=clang++
+- make clean
+- make CXX=g++
+- make clean
+
+notifications:
+ email:
+  recipients:
+  - dawidd0811@gmail.com
+  on_success: always
+  on_failure: always
